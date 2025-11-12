@@ -42,8 +42,8 @@
         <div class="nav">
           <p>
             <a href="index.htm">Home</a><br>
-            <a href="career_goals.htm">Career Goals</a><br>
-            <a href="projects.htm">Projects</a><br>
+            <a href="career_goals.htm">Career Roadmap</a><br>
+            <a href="projects.htm">My Projects</a><br>
             <a href="#contact">Contact</a><br>
 	    <hr class="old-hr">
 	    <span><b>Projects Index</b></span>
@@ -58,7 +58,7 @@
       </td>
 
       <td valign="top" class="content">
-        <h2>Engineering & Discovery Projects</h2>
+        <h2>Engineering & Technical Projects</h2>
         <p>Here are a few projects that I have worked on through the years. I will try to keep this updated as I progress so that I can show off my work.</p>
 
         <hr class="old-hr">
@@ -77,9 +77,26 @@
           <h3>Ethical RF Hacking Educational Demo (GTRI Internship)</h3>
 	  <p><b>Objective:</b> Create educational demo to teach about RF communications and ethical applications of RF hacking techniques</p>
           <p><b>Tools & Components:</b> HackRF Portapack, RC Cars, Dipole Antennas, Handheld UHF/VHF radios</p>
-          <p><b>Skills Used:</b> spectral analysis, reverse engineering, RF signal capture and playback, use of various signal modulation techniques</p>	
-          <p><b>Summary: </b>During my internship at Georgia Tech Research Institute, I worked with RF hacking devices such as the Flipper Zero and the HackRF Portapack to learn about RF hacking and ways that RF hacking techniques can be leveraged effecively. During the course of the summer internship I, as well as the other interns in my group, worked to earn our HAM Radio licenses, and in the process learned much about RF communications systems and the laws surrounding them. Following this our group worked mostly with the HackRF Portapack to find a way to interfere with and furthermore take control of RF controlled RC vehicles. Using our experience we created a demo-kit which could be used to demonstrate the abilities of RF and principles of RF hacking to younger audiences.</p>
+          <p><b>Skills Used:</b> spectral analysis, reverse engineering, RF signal capture and playback, use of various signal modulation techniques, technical instruction writing</p>	
+          <p><b>Summary: </b><!--During my internship at Georgia Tech Research Institute, I worked with RF hacking devices such as the Flipper Zero and the HackRF Portapack to learn about RF hacking and ways that RF hacking techniques can be leveraged effecively. During the course of the summer internship I, as well as the other interns in my group, worked to earn our HAM Radio licenses, and in the process learned much about RF communications systems and the laws surrounding them. Following this our group worked mostly with the HackRF Portapack to find a way to interfere with and furthermore take control of RF controlled RC vehicles. Using our experience we created a demo-kit which could be used to demonstrate the abilities of RF and principles of RF hacking to younger audiences.--!>During my internship at Georgia Tech Research Institute, I worked with a team of other interns to develop an educational demonstration of RF hacking techniques. Specifically we intended to show how RF capture and playback could be used to hijack the control of an RC car. The demo was also designed to help explain links between RF hacking and more complicated RF Capture and Playback systems used in electronic warfare. 
+Before working on this project, I had very little experience with RF engineering, because of this this internship was one of my most rewarding experiences. My group started by learning basic principles of RF and studying to take the HAM radio operator’s test. We needed to be licensed HAM operators to legally operate some of the equipment we used during the project and also studying for the license test is a very good way to learn some of the more complicated RF principles. <br><br>
+	After earning our HAM licenses, we began to work on our main project, objective of hacking the RC car. First, we had to fix the front steering control of the RC car since the steering motor had burned out. We replaced it with another simple DC motor. We then used the FCC database to find what frequencies the car and controller used for communication and then used the spectral analysis tool on the HackRF to determine what type of modulation was used for the control emissions. Using this technique, we determined that the RC car used Frequency Modulation to transmit controls. We then used the HackRF to capture RF emissions from the controller when it was emitting. Using these captures we were able to playback the FM emissions from the controller and control the RC vehicle.<br><br>
+	Following our success with the simple FM controlled car our supervisor challenged us to hack a more modern RC car which used 2.4 GHz Wi-Fi band RF emissions. This challenge proved to be much more difficult since the controller for this car used a Two-Way radio communication system consisting of signed digital packets similar to how Wi-Fi functions. We were still able to determine the emission frequencies for this car using the same procedure involving the FCC documentation as the last car. Using this we were able to use spectral analysis on the emissions of the car controller to determine that the modulation type for this controller was Four Level Gaussian Frequency Shift Keying. There were no published docs from the manufacturer detailing how the 4-gFSK signal was modulated and due to our inexperience in RF we had difficulty determining a way to properly reverse engineer the modulation for this car. Because of this, we were unable to properly hack the more advanced 2.4 GHz car, but we did write about our discoveries on how its control system worked in our educational packet. <br><br>
+Finally, we prepared the final educational demo. We made a pelican case with all of the different components required for the demo. We also wrote detailed instructions for every component and how to use them in the demo. Finally we prepared a PowerPoint of our findings and presented it to other GTRI high school interns and community members.
+</p>
 	  <p><b>Project Gallery:</b></p>
+	  <p align="center">
+	 <p>The Blue 2.4Ghz RC car:</p>
+	 <img src="Car_blue.jpg" alt="2.4ghz car" style="width:350px;height:280px;">&nbsp;
+	 <p>The Red FM RC car:</p>
+	 <img src="Car_red.jpg" alt="FM car" style="width:350px;height:280px;">&nbsp;
+	 <p>HackRF Spectral analysis screen: (Bad example but only photo I could find)</p>
+	 <img src="spectral.jpg" alt="spectral analysis" style="width:280px;height:350px;">&nbsp;
+	 <p>My Group preparing to present:</p>
+	 <img src="present.jpg" alt="presentation" style="width:350px;height:280px;">&nbsp;
+	 <p>Me posing in front of the cool GTRI sign</p>
+	 <img src="the guy.jpg" alt="me lol" style="width:350px;height:280px;">&nbsp;
+	 </p>
         </div>
 <!--
 <div class="project">
