@@ -69,10 +69,33 @@
         <div class="project">
           <h3>Breadboard Oscillator Circuit (ECE Discovery Project)</h3>
           <p><b>Objective:</b> Demonstrate basic principles of oscillator circuits as well as how to prototype on a breadboard</p>
-          <p><b>Tools & Components:</b> Breadboard, wires, speaker, resistors, capacitors, CD40106 Inverter IC, battery </p>
-          <p><b>Skills Used:</b> circuit assembly, use of integrated circuits, use of breadboard, use of oscilloscope, documentation.</p>
-	  <p><b>Summary:</b> WIP not quite done yet</p>
+          <p><b>Tools & Components:</b> Breadboard, wires, resistors, capacitors, CD40106 Inverter IC, battery, oscilloscope </p>
+          <p><b>Skills Used:</b> circuit assembly, use of integrated circuits, use of breadboard, use of oscilloscope.</p>
+	  <p><b>Summary:</b>For my discovery project I decided to experiment with some of the resources available to me in the Georgia Tech HIVE makerspace to make a basic oscillator circuit. My original proposal for the discovery project was to find a way to hack the hardware of my graphing calculator to use the I/O port as an audio port. The I/O port on this calculator was a mini audio jack so it technically could be used for audio by design. I spent a while looking into this and found that it was likely beyond my skill level though. Because of this I decided to pivot to an easier project that I would be able to complete without buying anything or having to worry about completion progress. <br><br>
+The original proposed plan would have dealt with signal modulation due to the nature of producing digital audio signals. Because of this I decided to look into creating something vaguely related to signal modulation. I realized that it would be very difficult to design a new modulation system from scratch, so I decided to go with something even simpler and make a simple oscillator circuit. <br><br>
+Because of the resources I had available at the hive I decided to make a breadboard based oscillator circuit. When researching different types of basic oscillator circuits, I determined that the Schmitt trigger RC oscillator was the simplest and easiest to replicate on the breadboard. I also found several past examples of Schmitt trigger based oscillators made using breadboards, so I knew my concept had a basis. <br><br>
+The Schmitt trigger oscillator circuit is a simple circuit with a capacitor and then a Schmitt trigger and resistor wired in parallel to one another. Schmitt trigger oscillators work because the Schmitt trigger circuit, which converts analog electric values to a digital either high or low output. Because of this property the circuit will output a low signal when the capacitor is charging and then when the capacitor charges up and releases the Schmitt trigger will output the high signal until the capacitor is fully discharged. Because of this circuit’s properties as an RC circuit changing the Ohmage of the resistor or the Farads of the capacitor will change the frequency of the waveform. <br><br>
+To create my circuit, I used a breadboard to replicate the circuit of a Schmitt trigger oscillator using a CD40106 Schmitt trigger inverter IC. Because of this my circuit also had to take into account providing supply power and ground for the IC so that the Schmitt trigger itself would function. I then placed the capacitor and resistor in place as they would be according to the circuit diagram and made an output channel so that I could hook my circuit up to an oscilloscope. <br><br>
+I had never used an oscilloscope before this project so there was a definite learning curve to using one. I first had to figure out how to set the vertical axis so that I could actually see what I was doing. After figuring out this I also figured out how to set the horizontal axis. I still was left with a major problem which was that my signal appeared simply as a thick fuzzy line on screen. I could make out the proper signal when I zoomed on the axes but then it would go back to being fuzzy. After a while of reading I learned about the “trigger” setting of the oscilloscope. This setting allows you to more or less freeze the motion of a waveform that touches on the line set as the trigger voltage. With this figured out I was able to observe my waveform on the oscilloscope screen which was very satisfying. <br><br>
+The one major problem I noticed with the waveform is that despite having the circuit wired correctly the waveform I was observing appeared to be a capacitor discharge waveform and not the square waveform that my design should have been making. I do not know what caused this issue, but it could be due to a faulty Schmitt trigger IC. If I could go back in time I would have traded my IC and tried a new one to make sure that the one, I was using wasn’t defective. <br><br>
+Overall, this project was still rather successful since I acquainted myself with the HIVE space. This was also an informative experience since I learned how to use an oscilloscope and a bit about Schmitt trigger circuits. I also got to have fun playing around with different resistors and capacitors changing the frequency and observing this on the oscilloscope. <br><br>
+</p>
 	  <p><b>Project Gallery:</b></p>
+	  <p align="center">
+	  <p>My oscillator circit:</p>
+	  <img src="https://media.discordapp.net/attachments/1438234795644555478/1441158289600544778/IMG_5661.jpg?ex=6920c6bf&is=691f753f&hm=c12499bf8f9dcd3a0212ac0211171f7f38b4bda3b357dd0de3ebbeb4be94ec4e&=&format=webp&width=1745&height=1308" alt="2.4ghz car" style="width:350px;height:280px;">&nbsp;
+	  <p>The oscilloscope showing the waveform produced:</p>
+	  <img src="https://media.discordapp.net/attachments/1438234795644555478/1440935625787445379/IMG_5663.jpg?ex=6920a020&is=691f4ea0&hm=0f50a37f325ac0806dfaa7a7715bd3b609175468d219598be70a554b5a81d6e7&=&format=webp&width=1686&height=1265" alt="FM car" style="width:350px;height:280px;">&nbsp;
+	  <p>An example diagram of a Schmitt trigger RC oscillator circuit:</p>
+	  <img src="https://www.allaboutcircuits.com/uploads/articles/Schmitt_trigger_oscillator3.jpg" alt="smitty smit smit" style="width:350px;height:280px;">&nbsp
+	  <p>The whole workbench showing everything together:</p>
+	  <img src="https://media.discordapp.net/attachments/1438234795644555478/1440935625183330324/IMG_5664.jpg?ex=6920a020&is=691f4ea0&hm=d93440a0a2bb3a25d72cde7396d7f86ec9a2eb67c12c047aca0965c9797df10d&=&format=webp&width=1686&height=1265" alt="spectral analysis" style="width:350px;height:280px;">&nbsp;
+	  <p>A horizontal stretch of the waveform on the O-Scope:</p>
+	  <img src="https://media.discordapp.net/attachments/1438234795644555478/1440935631181054024/IMG_5656.jpg?ex=6920a021&is=691f4ea1&hm=27425c099dc7958960436c2d2299993a25ed378bef40d21f2a0850141aa14560&=&format=webp&width=1686&height=1265" alt="presentation" style="width:350px;height:280px;">&nbsp;
+	  <p>It is likely I was somehow reading the capacitor waveform:</p>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Opamprelaxationoscillator.svg/2560px-Opamprelaxationoscillator.svg.png" alt="presentation" style="width:350px;height:280px;">&nbsp;
+	  </p>
+
         </div>
 	<hr class="old-hr">
 	<a name="GTRI"></a>
